@@ -1,0 +1,118 @@
+[2024-01-28 08:31:26,713] INFO: {
+    "abs_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass",
+    "amass_anno_dir": "/home/aiRobots/src/siMLPe/data/amass/",
+    "batch_size": 256,
+    "cos_lr_max": 0.0003,
+    "cos_lr_min": 5e-08,
+    "cos_lr_total_iters": 115000,
+    "data_aug": true,
+    "deriv_input": true,
+    "deriv_output": true,
+    "link_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/log_last.log",
+    "link_val_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/val_last.log",
+    "log_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log",
+    "log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/log_2024_01_28_08_30_45.log",
+    "model_pth": null,
+    "motion": {
+        "amass_input_length": 50,
+        "amass_input_length_dct": 50,
+        "amass_target_length": 25,
+        "amass_target_length_eval": 25,
+        "amass_target_length_train": 25,
+        "dim": 54,
+        "pw3d_input_length": 50,
+        "pw3d_target_length_eval": 25,
+        "pw3d_target_length_train": 25
+    },
+    "motion_fc_in": {
+        "activation": "relu",
+        "in_features": 54,
+        "init_w_trunc_normal": false,
+        "out_features": 54,
+        "temporal_fc": false,
+        "with_norm": false
+    },
+    "motion_fc_out": {
+        "activation": "relu",
+        "in_features": 54,
+        "init_w_trunc_normal": true,
+        "out_features": 54,
+        "temporal_fc": false,
+        "with_norm": false
+    },
+    "motion_mlp": {
+        "hidden_dim": 54,
+        "norm_axis": "spatial",
+        "num_layers": 48,
+        "seq_len": 50,
+        "spatial_fc_only": false,
+        "with_normalization": true
+    },
+    "num_workers": 8,
+    "post_dct": false,
+    "pre_dct": false,
+    "print_every": 100,
+    "pw3d_anno_dir": "/home/aiRobots/src/siMLPe/data/3dpw/sequenceFiles/",
+    "repo_name": "siMLPe",
+    "root_dir": "/home/aiRobots/src/siMLPe",
+    "save_every": 5000,
+    "seed": 888,
+    "shift_step": 5,
+    "snapshot_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/snapshot",
+    "this_dir": "baseline_amass",
+    "use_relative_loss": true,
+    "val_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/val_2024_01_28_08_30_45.log",
+    "weight_decay": 0.0001
+}
+[2024-01-28 08:31:29,814] INFO: Iter 100 Summary: 
+[2024-01-28 08:31:29,814] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.10384170189499856
+[2024-01-28 08:31:32,649] INFO: Iter 200 Summary: 
+[2024-01-28 08:31:32,649] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.09196551516652107
+[2024-01-28 08:31:35,354] INFO: Iter 300 Summary: 
+[2024-01-28 08:31:35,354] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.08633251294493675
+[2024-01-28 08:31:38,105] INFO: Iter 400 Summary: 
+[2024-01-28 08:31:38,105] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.07351498939096927
+[2024-01-28 08:31:40,933] INFO: Iter 500 Summary: 
+[2024-01-28 08:31:40,933] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.0703217563778162
+[2024-01-28 08:31:43,786] INFO: Iter 600 Summary: 
+[2024-01-28 08:31:43,786] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06827104717493057
+[2024-01-28 08:31:46,505] INFO: Iter 700 Summary: 
+[2024-01-28 08:31:46,505] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06738353837281466
+[2024-01-28 08:31:49,312] INFO: Iter 800 Summary: 
+[2024-01-28 08:31:49,313] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06665618445724249
+[2024-01-28 08:31:52,154] INFO: Iter 900 Summary: 
+[2024-01-28 08:31:52,154] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06548911456018686
+[2024-01-28 08:31:55,029] INFO: Iter 1000 Summary: 
+[2024-01-28 08:31:55,030] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06444399654865265
+[2024-01-28 08:31:57,583] INFO: Iter 1100 Summary: 
+[2024-01-28 08:31:57,583] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06333105579018593
+[2024-01-28 08:32:00,369] INFO: Iter 1200 Summary: 
+[2024-01-28 08:32:00,369] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.0625123418495059
+[2024-01-28 08:32:03,232] INFO: Iter 1300 Summary: 
+[2024-01-28 08:32:03,232] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06199946064502001
+[2024-01-28 08:32:06,007] INFO: Iter 1400 Summary: 
+[2024-01-28 08:32:06,007] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.06177709206938744
+[2024-01-28 08:32:08,814] INFO: Iter 1500 Summary: 
+[2024-01-28 08:32:08,815] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.060536153167486194
+[2024-01-28 08:32:11,611] INFO: Iter 1600 Summary: 
+[2024-01-28 08:32:11,612] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.059954617507755756
+[2024-01-28 08:32:14,146] INFO: Iter 1700 Summary: 
+[2024-01-28 08:32:14,146] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05993129104375839
+[2024-01-28 08:32:16,764] INFO: Iter 1800 Summary: 
+[2024-01-28 08:32:16,765] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.059031273126602175
+[2024-01-28 08:32:19,531] INFO: Iter 1900 Summary: 
+[2024-01-28 08:32:19,531] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.058761792965233324
+[2024-01-28 08:32:22,200] INFO: Iter 2000 Summary: 
+[2024-01-28 08:32:22,200] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05871153268963099
+[2024-01-28 08:32:24,882] INFO: Iter 2100 Summary: 
+[2024-01-28 08:32:24,882] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05859907567501068
+[2024-01-28 08:32:27,813] INFO: Iter 2200 Summary: 
+[2024-01-28 08:32:27,813] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05793188292533159
+[2024-01-28 08:32:30,678] INFO: Iter 2300 Summary: 
+[2024-01-28 08:32:30,678] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.057343942560255524
+[2024-01-28 08:32:33,352] INFO: Iter 2400 Summary: 
+[2024-01-28 08:32:33,352] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05751103147864342
+[2024-01-28 08:32:36,131] INFO: Iter 2500 Summary: 
+[2024-01-28 08:32:36,131] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05713509451597929
+[2024-01-28 08:32:38,932] INFO: Iter 2600 Summary: 
+[2024-01-28 08:32:38,932] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.05705521132797003

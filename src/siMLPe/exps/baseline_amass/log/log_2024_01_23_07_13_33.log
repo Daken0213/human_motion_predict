@@ -1,0 +1,68 @@
+[2024-01-23 07:14:12,041] INFO: {
+    "abs_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass",
+    "amass_anno_dir": "/home/aiRobots/src/siMLPe/data/amass/",
+    "batch_size": 256,
+    "cos_lr_max": 0.0003,
+    "cos_lr_min": 5e-08,
+    "cos_lr_total_iters": 115000,
+    "data_aug": true,
+    "deriv_input": true,
+    "deriv_output": true,
+    "link_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/log_last.log",
+    "link_val_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/val_last.log",
+    "log_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log",
+    "log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/log_2024_01_23_07_13_33.log",
+    "model_pth": null,
+    "motion": {
+        "amass_input_length": 50,
+        "amass_input_length_dct": 50,
+        "amass_target_length": 25,
+        "amass_target_length_eval": 25,
+        "amass_target_length_train": 25,
+        "dim": 54,
+        "pw3d_input_length": 50,
+        "pw3d_target_length_eval": 25,
+        "pw3d_target_length_train": 25
+    },
+    "motion_fc_in": {
+        "activation": "relu",
+        "in_features": 54,
+        "init_w_trunc_normal": false,
+        "out_features": 54,
+        "temporal_fc": false,
+        "with_norm": false
+    },
+    "motion_fc_out": {
+        "activation": "relu",
+        "in_features": 54,
+        "init_w_trunc_normal": true,
+        "out_features": 54,
+        "temporal_fc": false,
+        "with_norm": false
+    },
+    "motion_mlp": {
+        "hidden_dim": 54,
+        "norm_axis": "spatial",
+        "num_layers": 48,
+        "seq_len": 50,
+        "spatial_fc_only": false,
+        "with_normalization": true
+    },
+    "num_workers": 8,
+    "post_dct": false,
+    "pre_dct": false,
+    "print_every": 100,
+    "pw3d_anno_dir": "/home/aiRobots/src/siMLPe/data/3dpw/sequenceFiles/",
+    "repo_name": "siMLPe",
+    "root_dir": "/home/aiRobots/src/siMLPe",
+    "save_every": 5000,
+    "seed": 888,
+    "shift_step": 5,
+    "snapshot_dir": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/snapshot",
+    "this_dir": "baseline_amass",
+    "use_relative_loss": true,
+    "val_log_file": "/home/aiRobots/src/siMLPe/exps/baseline_amass/log/val_2024_01_23_07_13_33.log",
+    "weight_decay": 0.0001
+}
+[2024-01-23 07:14:15,127] INFO: Iter 100 Summary: 
+[2024-01-23 07:14:15,128] INFO: 	 lr: 0.00030000000000000073 	 Training loss: 0.1056568468362093
