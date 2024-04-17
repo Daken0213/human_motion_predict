@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find azure_kinect_ros_driver)/launch/driver.launch" >
+    </include>
+    <!---TF-->
+    <node pkg="tf" type="static_transform_publisher" name="kinect_to_smpl" args="0 0 0 0 -1.57079 -1.57079 Pelvis0 smpl_root 30" />
+    <node pkg="tf" type="static_transform_publisher" name="head_to_camera" args="-0.05025 -0.1367 0 0 3.14159 1.57079 head2 camera_base 30" />
+
+    <!---TF_dynamic-->
+    <node pkg="human_motion_predict" type="tf_broadcaster.py" name="tf_broadcaster" output="screen" />
+    <node pkg="human_motion_predict" type="body_marker.py" name="body_shape_marker" output="screen" />
+    <!---SMPL Frame-->
+    <!-- <node pkg="human_motion_predict" type="tf_transfer.py" name="smpl_frame" output="screen" /> -->
+
+</launch>
